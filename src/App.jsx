@@ -16,8 +16,15 @@ class App extends Component {
     }
 
     // set default state
+    this.state = {
+      boxes: BOXES
+    }
 
     // bind methods to this
+  }
+
+  getRandomColor() {
+    return Math.round(Math.random() * 255);
   }
 
   render() {
